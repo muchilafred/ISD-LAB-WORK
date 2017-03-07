@@ -14,10 +14,10 @@
     </div>
  <div class="container">
 <label> <b>username</b></label>
-<input type="text" placeholder="Enter username" name="uname" required>
+<input type="text" placeholder="Enter username" name="fred" required>
 
 <label><b>password</b></label>
-<input type="password" placeholder="Enter password" name="psw" required>
+<input type="password" placeholder="Enter password" name="fredpwd" required>
 
      <button type="submit"><b>Login</b></button>
 <input type="checkbox" checked="checked"> Remember me
@@ -28,6 +28,18 @@
     <span class="psw">Forgot <a href="#">password</a> </span>
 </div>
 </form>
+set cookie('access_level','standarduser');
+<script language="javascript">
+    function ($accessLevel) {
+        if ($access_level == "standarduser"){
+            echo"<p>Youre currently logged in as a standard user</p>";
+        }
+        else if ($access_level == "root"){
+            echo"<p>Youre currently logged in as a root user</p>";
+            echo"<p>You now have access to administrative features</p>";
+        }
+    }
+</script>
 
 </body>
 </html>
