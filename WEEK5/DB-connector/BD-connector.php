@@ -5,7 +5,7 @@
  * Date: 07/03/2017
  * Time: 17:00
  */
-<?
+
 $connectstr_dbhost = '';
 $connectstr_dbname = '';
 $connectstr_dbusername = '';
