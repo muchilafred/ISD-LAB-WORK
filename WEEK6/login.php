@@ -9,6 +9,11 @@
 <body>
 <h1>PHP Login Form with Session</h1>
 <div class="loginBox">
+
+    <?php
+    include("dbconnect.php")
+    ?>
+
     <h3>Login Form</h3>
     <br><br>
     <form method="post" action="login.php">
